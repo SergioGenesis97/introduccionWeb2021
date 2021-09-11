@@ -1,4 +1,4 @@
 /* Selectores combinadores */
-div p{
+div > p{
     background-color: yellow;
 }
