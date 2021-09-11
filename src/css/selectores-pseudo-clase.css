@@ -18,3 +18,11 @@ a:hover{
 a:active{
     color: purple;
 }
+
+body{
+    background: rgb(0, 189, 180) 
+                url(./../../assets/img/white.png)
+                no-repeat
+                right
+                fixed;
+}
