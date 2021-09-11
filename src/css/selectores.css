@@ -1,0 +1,25 @@
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkred;
+}
+
+#selector-id{
+    background-color: blue;
+}
+
+.selector-clase{
+    background-color: coral;
+}
+
+.selector-clase2{
+    border: darkred;
+    border-style: solid;
+    border-width: 2px;
+}
+
+/* CSS prioriza los estilos en el orden de id, clase y nombre (elemento) */
+
+p.selector-clase{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
