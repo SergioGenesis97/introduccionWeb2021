@@ -12,3 +12,9 @@ p::first-line{
 p{
     width: 50%;
 }
+
+
+/*Selector de atributos*/
+a[target="_blank"]{
+    background-color: yellow;
+}
