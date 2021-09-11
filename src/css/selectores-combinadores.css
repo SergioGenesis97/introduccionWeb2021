@@ -1,6 +1,6 @@
 /* Selectores combinadores */
 
-/* Selector Adyacente (+) */
-div + p{
+/* Selector Hermanos (~) */
+div ~ p{
     background-color: yellow;
 }
