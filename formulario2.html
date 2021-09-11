@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con estilos</title>
+</head>
+<body style="font-family: sans-serif;"> 
+    <div style="width: 50%; background-color: lemonchiffon;">
+        <form action="./action.html" method="get">
+
+           <div style="display: flex; padding: 5px;"> <!-- FILA -->
+            
+                <div style="width: 50%; padding-right: 10px;"> <!-- COLUMNA -->
+                    <div>
+                        <label for="name">Nombre</label>
+                    </div>
+                    <input type="text" id="name" placeholder="Nombre"
+                           style="width: 100%; border-color: gray;
+                                  border-radius: 5px; border-style: solid;
+                                  border-width: 3px;
+                                  padding-top: 5px; padding-bottom: 5px;"> 
+                </div>
+
+                <div style="width: 50%; padding-right: 10%;"> <!-- COLUMNA -->
+                    <div>
+                        <label for="pass">Password</label>
+                    </div>
+                    <input type="password" id="pass" placeholder="password" style="width: 100%;">
+                </div>
+
+           </div> <!-- END FILA -->
+
+           <div style="display: flex; padding: 5px;"> <!-- FILA -->
+
+                <div style="width: 100%; padding-right: 10px;"> <!-- COLUMNA -->
+                    <div>
+                        <label for="address">Domicilio</label>
+                    </div>
+                    <input type="text" id="address" placeholder="Domicilio" style="width: 100%;"> 
+                </div>
+
+           </div> <!-- END FILA -->
+
+           <div style="display: flex; padding: 5px;"> <!-- FILA -->
+            
+                <div style="width: 50%; padding-right: 10px;"> <!-- COLUMNA -->
+                    <div>
+                        <label for="">Ciudad</label>
+                    </div>
+                    <input type="text" id="city" placeholder="Ciudad" style="width: 100%;"> 
+                </div>
+
+                <div style="width: 50%; padding-right: 10%;"> <!-- COLUMNA -->
+                    <div>
+                        <label for="pass">Estado</label>
+                    </div>
+                    <input type="text" id="state" placeholder="Estado" style="width: 100%;">
+                </div>
+
+                <div style="width: 50%; padding-right: 10%;"> <!-- COLUMNA -->
+                    <div>
+                        <label for="pass">Codigo Postal</label>
+                    </div>
+                    <input type="text" id="zip" placeholder="codigo Postal" style="width: 100%;">
+                </div>
+
+            </div> <!-- END FILA -->
+
+            <div style="display: flex; padding: 5px;"> <!-- FILA -->
+
+                <div style="width: 100%; padding-right: 10px;"> <!-- COLUMNA -->
+                    <input type="submit" value="Guardar"
+                            style="color: whitesmoke;
+                                background-color:rgb(40, 114, 211);
+                                border-radius: 5px;
+                                border-style: solid; border-color: rgb(40, 114, 211);
+                                font-family: sans-serif;">
+                </div>
+
+           </div> <!-- END FILA -->
+            
+        </form>
+    </div>
+</body>
+</html>
