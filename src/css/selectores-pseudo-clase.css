@@ -1,0 +1,20 @@
+
+/* LINK NO VISITADO*/
+a:link{
+    color: red;
+}
+
+/* LINK VISITADO*/
+a:visited{
+    color: green;
+}
+
+/* LINK pasar cursor */
+a:hover{
+    color: palevioletred;
+}
+
+/* LINK manetener presionado */
+a:active{
+    color: purple;
+}
