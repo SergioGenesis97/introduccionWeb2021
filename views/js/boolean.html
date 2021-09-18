@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boolean</title>
+</head>
+<body>
+    <script>
+        let x = true, y = false;
+
+        //Tabla de verdad AND
+        console.log("Tabla de verdad AND:");
+        console.log("X && Y: ", x && y); //Falso
+        console.log("Y && X: ", y && x); //Falso
+        console.log("X && X: ", x && x); //True
+        console.log("Y && Y: ", y && y); //True
+
+        console.log(" ");
+
+        //Tabla de verdad OR
+        console.log("Tabla de verdad OR:");
+        console.log("X || Y: ", x || y); //Falso
+        console.log("Y || X: ", y || x); //Falso
+        console.log("X || X: ", x || x); //True
+        console.log("Y || Y: ", y || y); //True
+
+        console.log(" ");
+
+        //Tabla de Igualdad y Diferencia
+        console.log("Tabla de Igualdad y Diferencia:");
+        console.log("X == Y: ", x == y); //Igualdad = Falso
+        console.log("Y != X: ", y != x); //Diferencia = True
+        console.log("!X: ", !x); //Negacion = True
+
+        console.log(" ");
+
+        y = 1;
+        console.log("X === Y: ", x === y); //Se recomienda
+        console.log("X == Y: ", x == y);
+
+
+    </script>
+    
+</body>
+</html>
