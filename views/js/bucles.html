@@ -53,6 +53,25 @@
             console.log("El indice es: " + index + " el valor es: " + value);
         });
 
+        console.log(" ");
+        console.log("Metodos de arreglos");
+        
+        console.log("Arreglo: ",arreglo.toString());
+        console.log("Pop: ",arreglo.pop());
+        console.log(arreglo);
+        console.log("Push: ",arreglo.push(55));
+        console.log(arreglo);
+        console.log("Shift: ",arreglo.shift());
+        console.log(arreglo);
+        console.log("Slice: ",arreglo.splice(2, 1));
+        console.log(arreglo);
+
+
+        const result = arreglo.filter(value => {
+            return value > 20
+        });
+        console.log("Filter # > 20: ",result);
+
     </script>
 </body>
 </html>
