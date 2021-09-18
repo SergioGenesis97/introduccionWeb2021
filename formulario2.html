@@ -5,100 +5,126 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario con estilos</title>
+
+    <link rel="stylesheet" href="./src/css/formulario2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
 </head>
-<body style="font-family: sans-serif;"> 
-    <div style="width: 50%; background-color: lemonchiffon;">
+<body> 
+    <div class="formBody"">
         <form action="./action.html" method="get">
 
-           <div style="display: flex; padding: 5px;"> <!-- FILA -->
+           <div class="fila"> <!-- FILA -->
             
-                <div style="width: 50%; padding-right: 10px;"> <!-- COLUMNA -->
+                <div class="columna""> <!-- COLUMNA -->
                     <div>
                         <label for="name">Nombre</label>
                     </div>
-                    <input type="text" id="name" placeholder="Nombre"
-                           style="width: 100%; border-color: gray;
-                                  border-radius: 5px; border-style: solid;
-                                  border-width: 3px;
-                                  padding-top: 5px; padding-bottom: 5px;"> 
+                    <input class="input" type="text" id="name" placeholder="Nombre"> 
                 </div>
 
-                <div style="width: 50%; padding-right: 10px;"> <!-- COLUMNA -->
+                <div class="columna"> <!-- COLUMNA -->
                     <div>
                         <label for="pass">Password</label>
                     </div>
-                    <input type="password" id="pass" placeholder="password"
-                           style="width: 100%; border-color: gray;
-                           border-radius: 5px; border-style: solid;
-                           border-width: 3px;
-                           padding-top: 5px; padding-bottom: 5px;">
+                    <input class="input" type="password" id="pass" placeholder="password">
                 </div>
 
            </div> <!-- END FILA -->
 
-           <div style="display: flex; padding: 5px;"> <!-- FILA -->
+           <div class="fila"> <!-- FILA -->
 
-                <div style="width: 100%; padding-right: 10px;"> <!-- COLUMNA -->
+                <div class="columnaLong"> <!-- COLUMNA -->
                     <div>
                         <label for="address">Domicilio</label>
                     </div>
-                    <input type="text" id="address" placeholder="Domicilio"
-                           style="width: 100%;  border-color: gray;
-                           border-radius: 5px; border-style: solid;
-                           border-width: 3px;
-                           padding-top: 5px; padding-bottom: 5px;"> 
+                    <input class="input" type="text" id="address" placeholder="Domicilio"> 
                 </div>
-
            </div> <!-- END FILA -->
 
-           <div style="display: flex; padding: 5px;"> <!-- FILA -->
+           <div class="fila"> <!-- FILA -->
+
+                <div class="columnaLong"> <!-- COLUMNA -->
+                    <div>
+                        <label for="address">Domicilio 2</label>
+                    </div>
+                    <input class="input" type="text" id="address" placeholder="Domicilio 2"> 
+                </div>
+           </div> <!-- END FILA -->
+
+           <div class="fila""> <!-- FILA -->
             
-                <div style="width: 50%; padding-right: 10px;"> <!-- COLUMNA -->
+                <div class="columna"> <!-- COLUMNA -->
                     <div>
                         <label for="">Ciudad</label>
                     </div>
-                    <input type="text" id="city" placeholder="Ciudad"
-                           style="width: 100%; border-color: gray;
-                           border-radius: 5px; border-style: solid;
-                           border-width: 3px;
-                           padding-top: 5px; padding-bottom: 5px;"> 
+                    <input class="input" type="text" id="city" placeholder="Ciudad"> 
                 </div>
 
-                <div style="width: 30%; padding-right: 10px;"> <!-- COLUMNA -->
+                <div class="columna"> <!-- COLUMNA -->
                     <div>
                         <label for="pass">Estado</label>
                     </div>
-                    <input type="text" id="state" placeholder="Estado"
-                           style="width: 100%; border-color: gray;
-                           border-radius: 5px; border-style: solid;
-                           border-width: 3px;
-                           padding-top: 5px; padding-bottom: 5px;">
+                    <select name="estados" class="select">
+                        <option value=" ">Selecciona un estado</option>
+                        <option value="DIF">Distrito Federal</option>
+                        <option value="AGS">Aguascalientes</option>
+                        <option value="BCN">Baja California</option>
+                        <option value="BCS">Baja California Sur</option>
+                        <option value="CAM">Campeche</option>
+                        <option value="CHP">Chiapas</option>
+                        <option value="CHI">Chihuahua</option>
+                        <option value="COA">Coahuila</option>
+                        <option value="COL">Colima</option>
+                        <option value="DUR">Durango</option>
+                        <option value="GTO">Guanajuato</option>
+                        <option value="GRO">Guerrero</option>
+                        <option value="HGO">Hidalgo</option>
+                        <option value="JAL">Jalisco</option>
+                        <option value="MEX">M&eacute;xico</option>
+                        <option value="MIC">Michoac&aacute;n</option>
+                        <option value="MOR">Morelos</option>
+                        <option value="NAY">Nayarit</option>
+                        <option value="NLE">Nuevo Le&oacute;n</option>
+                        <option value="OAX">Oaxaca</option>
+                        <option value="PUE">Puebla</option>
+                        <option value="QRO">Quer&eacute;taro</option>
+                        <option value="ROO">Quintana Roo</option>
+                        <option value="SLP">San Luis Potos&iacute;</option>
+                        <option value="SIN">Sinaloa</option>
+                        <option value="SON">Sonora</option>
+                        <option value="TAB">Tabasco</option>
+                        <option value="TAM">Tamaulipas</option>
+                        <option value="TLX">Tlaxcala</option>
+                        <option value="VER">Veracruz</option>
+                        <option value="YUC">Yucat&aacute;n</option>
+                        <option value="ZAC">Zacatecas</option>
+                    </select>
                 </div>
 
-                <div style="width: 20%; padding-right: 10px;"> <!-- COLUMNA -->
+                <div class="columna"> <!-- COLUMNA -->
                     <div>
                         <label for="pass">Codigo Postal</label>
                     </div>
-                    <input type="text" id="zip" placeholder="codigo Postal"
-                           style="width: 100%; border-color: gray;
-                           border-radius: 5px; border-style: solid;
-                           border-width: 3px;
-                           padding-top: 5px; padding-bottom: 5px;">
+                    <input class="input" type="text" id="zip" placeholder="codigo Postal">
+                </div>
+
+            </div> <!-- END FILA -->
+            
+            <div class="fila"> <!-- FILA -->
+
+                <div class="columna"> <!--COLUMNA -->
+                    <input type="checkbox" name="check" id="check">
+                    <label for="check">Check me out</label>
                 </div>
 
             </div> <!-- END FILA -->
 
-            <div style="display: flex; padding: 5px;"> <!-- FILA -->
+            <div class="fila"> <!-- FILA -->
 
-                <div style="width: 100%; padding-right: 10px;"> <!-- COLUMNA -->
-                    <input type="submit" value="Guardar"
-                            style="color: whitesmoke;
-                                background-color:rgb(40, 114, 211);
-                                border-radius: 5px;
-                                border-style: solid; border-color: rgb(40, 114, 211);
-                                font-family: sans-serif;">
+                <div class="columna"> <!-- COLUMNA -->
+                    <input class="btnGuardar" type="submit" value="Guardar">
                 </div>
-
            </div> <!-- END FILA -->
             
         </form>
