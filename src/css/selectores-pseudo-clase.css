@@ -1,12 +1,12 @@
 
 /* LINK NO VISITADO*/
 a:link{
-    color: red;
+    color: darkred;
 }
 
 /* LINK VISITADO*/
 a:visited{
-    color: green;
+    color: dimgray;
 }
 
 /* LINK pasar cursor */
@@ -20,7 +20,7 @@ a:active{
 }
 
 body{
-    background: rgb(0, 189, 180) 
+    background: rgb(214, 216, 216) 
                 url(./../../assets/img/white.png)
                 no-repeat
                 right
