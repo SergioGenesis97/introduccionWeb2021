@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+</head>
+<body>
+    
+    <!-- On keyup -->
+    <div>
+        <input type="text" id="original" onkeyup="duplicarTexto()">
+        <input type="text" id="copia">
+    </div>
+
+    <div style="background-color: red; width: 120px;
+                height: 20px; padding: 0px; margin: 20px;"
+         onmouseover = Mover(this)
+         onmouseout = Mout(this)>
+
+    </div>
+
+    <!-- On click -->
+    <div>
+        <button onclick="insertarFecha()">Fecha y hora</button>
+        <p id="demo"></p>
+    </div>
+
+    <script>
+
+        function insertarFecha() {
+            document.getElementById('demo').innerHTML = Date();
+        };
+
+
+        function duplicarTexto(){
+            const value = document.getElementById('original').value;
+
+            document.getElementById('copia').value = value;
+        };
+
+        //Mouse Over
+        function Mover(obj){
+            obj.innerHTML = "Slayer"
+        };
+
+        //Mouse Out
+        function Mout(obj){
+            obj.innerHTML = "Doom"
+        };
+
+    </script>
+
+</body>
+</html>
