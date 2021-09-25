@@ -1,3 +1,12 @@
+body{
+    background-image: url('./../../assets/img/skys.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: cornsilk;
+    
+}
+
 #col1{
     background-color: rgb(59, 255, 229);
     border: black solid 1px;
