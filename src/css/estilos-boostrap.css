@@ -25,3 +25,7 @@ body{
     margin-bottom: 2.5%;
     margin-top: 1%;
 }
+
+.accordion-body{
+    color: black;
+}
